@@ -184,7 +184,7 @@ def base_layout(title="", height=380):
 @st.cache_data
 def load_data():
     df = pd.read_csv(
-        r"D:\MyFiles\Downloads\HHS_Unaccompanied_Alien_Children_Program - HHS_Unaccompanied_Alien_Children_Program (3).csv"
+        "HHS_Unaccompanied_Alien_Children_Program - HHS_Unaccompanied_Alien_Children_Program (3).csv"
     )
     df.columns = df.columns.str.strip()
 
