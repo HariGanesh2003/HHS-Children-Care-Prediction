@@ -183,9 +183,7 @@ def base_layout(title="", height=380):
 # ─────────────────────────────────────────────
 @st.cache_data
 def load_data():
-    df = pd.read_csv(
-        "HHS_Unaccompanied_Alien_Children_Program - HHS_Unaccompanied_Alien_Children_Program (3).csv"
-    )
+    df = pd.read_csv("https://github.com/HariGanesh2003/HHS-Children-Care-Prediction/blob/ef3d63a424bb5b85457d2f153f00559a7eafe629/HHS_Unaccompanied_Alien_Children_Program%20-%20HHS_Unaccompanied_Alien_Children_Program%20(3).csv")
     df.columns = df.columns.str.strip()
 
     # Rename for convenience
